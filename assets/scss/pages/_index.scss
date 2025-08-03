@@ -1,3 +1,336 @@
-.index-title {
-  font-size: 100px;
+.container {
+  width: 1296px;
+  // margin: 0 auto;
+}
+
+main {}
+
+// .top-banner
+.top-banner {
+  height: 800px;
+  background: url(../images/top-banner.png) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 288px 200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.top-banner h1 {
+  font-size: 64px;
+  margin-bottom: 16px
+}
+
+.top-banner h3 {
+  font-size: 28px;
+  margin-bottom: 48px
+}
+
+.top-banner button,
+.cta-banner button {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  letter-spacing: .05em;
+  padding: 12px 24px;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 48px;
+  background-color: #C0FA73;
+}
+
+.top-banner button a:hover,
+.cta-banner button a:hover {
+  color: #57a203;
+}
+
+// 新上商品
+.new-Products,
+.hot-Products,
+.chooset-Products,
+.idea-Products {
+  margin: 64px auto;
+  text-align: left;
+}
+
+.new-Products h2.tiele {
+  font-size: 48px;
+  text-align: center;
+}
+
+.new-Products h3.subtitle {
+  font-size: 32px;
+  text-align: center;
+}
+
+.new-Products h4.title {
+  font-size: 20px;
+  margin-top: 4px;
+}
+
+.new-Products h5.price {
+  font-size: 16px;
+}
+
+// 熱門商品
+.hot-Products {
+  margin: 64px auto;
+  text-align: left;
+}
+
+.hot-Products h3.subtitle {
+  font-size: 32px;
+  padding-left: 12px;
+}
+
+.hot-Products a {
+  position: relative;
+}
+
+.hot-Products span {
+  color: #57A203;
+  padding: 8px 12px;
+  background-color: #F5FEE7;
+  position: absolute;
+}
+
+// 
+.cta-banner {
+  margin: 48px auto;
+  height: 470px;
+  background: url(../images/cta-banner.png) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 100px 0;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+}
+
+.cta-banner h2.title {
+  font-size: 48px;
+  margin-bottom: 16px;
+
+}
+
+.cta-banner h2.title span {
+  margin: 0 6px;
+}
+
+.cta-banner h3.title {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.cta-banner h4.title {
+  color: #ADB5BD;
+  margin-bottom: 48px;
+}
+
+.cta-banner button {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  letter-spacing: .05em;
+  padding: 12px 24px;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 48px;
+  background-color: #C0FA73;
+}
+
+.cta-banner .star {
+  position: absolute;
+  left: calc(50% - 376px);
+  top: 68px;
+}
+
+.cta-banner .sparkle {
+  position: absolute;
+  right: calc(50% - 340px);
+  bottom: 120px;
+}
+
+// 依系列選購
+.chooset-Products h3.title {
+  font-size: 32px;
+  padding-left: 12px;
+}
+
+.chooset-Products a {
+  position: relative;
+}
+
+.darken-40 {
+  filter: brightness(60%);
+}
+
+.chooset-Products .middle {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  color: #fff;
+  position: absolute;
+}
+
+.chooset-Products .middle p {
+  font-size: 28px;
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: 700;
+}
+
+// 穿搭靈感
+.idea-Products h3.title {
+  font-size: 32px;
+  padding-left: 12px;
+}
+
+.idea-Products .gallery-grid {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  margin: 0 12px;
+}
+
+.idea-Products .gallery-grid .larger {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.idea-Products .gallery-grid img {
+  display: block;
+  width: 100%;
+}
+
+
+@media screen and (max-width:768px) {
+  .container {
+    width: 100%;
+    // margin: 0 auto;
+  }
+
+  main {
+    margin: 40px 12px;
+  }
+
+  // .top-banner
+  .top-banner {
+    padding: 130px 36px;
+    object-fit: cover;
+    // margin: 0 -12px;
+    height: 480px;
+    width: 100%;
+  }
+
+  .top-banner h1 {
+    font-size: 48px;
+    margin-bottom: 16px
+  }
+
+  .top-banner h3 {
+    font-size: 20px;
+    margin-bottom: 48px
+  }
+
+  // 
+  .new-Products h2.tiele {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .new-Products h3.subtitle {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .new-Products h4.title {
+    font-size: 16px;
+    margin-top: 4px;
+  }
+
+  .new-Products h5.price {
+    font-size: 16px;
+  }
+
+  // 
+  .hot-Products {
+    margin: 64px -4px;
+  }
+
+  .hot-Products img {
+    max-width: 350px;
+  }
+
+  // 
+  .cta-banner {
+    // width: 100%;
+    margin: 0 -12px;
+    padding: 64px 36px;
+  }
+
+  .cta-banner h2.title {
+    font-size: 32px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cta-banner h2.title span {
+    margin: 0 6px;
+  }
+
+  .cta-banner h3.title {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .cta-banner h4.title {
+    color: #ADB5BD;
+    margin-bottom: 48px;
+  }
+
+  .cta-banner h4.title span {
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .cta-banner h4.title span.m-none {
+    display: none;
+  }
+
+  .cta-banner .star {
+    left: -24px;
+    top: 36px;
+  }
+
+  .cta-banner .sparkle {
+    right: 0;
+    bottom: 104px;
+  }
+
+  // 
+  .chooset-Products .middle p {
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  // 
+  .idea-Products .gallery-grid {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding-left: 0;
+  }
+
+  .idea-Products .gallery-grid img {
+    max-width: 300px;
+  }
+
 }

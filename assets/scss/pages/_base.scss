@@ -1,0 +1,203 @@
+.d-flex {
+    display: flex;
+}
+
+.list-none {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* 字級 */
+.f-32 {
+    font-size: 32px;
+}
+
+.f-20 {
+    font-size: 20px;
+}
+
+.f-14 {
+    font-size: 14px;
+
+}
+
+.f-700 {
+    font-weight: 700;
+}
+
+.f-500 {
+    font-weight: 500;
+}
+
+/* 顏色 */
+.color_bk {
+    color: #212529;
+}
+
+.color_g {
+    color: #C0FA73;
+}
+
+.color_gy {
+    color: #6C757D;
+
+}
+
+.color_red {
+    color: #D74F4F;
+}
+
+hr {
+    background-color: #DEE2E6;
+    height: 1px;
+    margin: 32px auto;
+    width: 100%;
+    border: 0;
+}
+
+/* 通用樣式 */
+.container {
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    padding: 0 12px;
+    width: calc(100% / 12);
+    display: block;
+}
+
+.col-2 {
+    padding: 0 12px;
+    width: calc(100% / 12 * 2);
+}
+
+.hot-col-3 {
+    padding: 0 12px;
+    width: calc(100% / 12 * 3);
+}
+
+.chooset-col-3 {
+    padding: 0 12px;
+    width: calc(100% / 12 * 3);
+}
+
+.col-4 {
+    padding: 0 12px;
+    width: calc(100% / 12 * 4);
+}
+
+.col-6 {
+
+    padding: 0 12px;
+    width: calc(100% / 12 * 6);
+}
+
+.col-7 {
+    padding: 0 12px;
+    width: calc(100% / 12 * 7);
+}
+
+.col-8 {
+    padding: 0 12px;
+    width: calc(100% / 12 * 8);
+}
+
+.col-9 {
+    padding: 0 12px;
+    width: calc(100% / 12 * 9);
+}
+
+.col-10 {
+    padding: 0 12px;
+    width: calc(100% / 12 * 10);
+}
+
+.col-11 {
+    padding: 0 12px;
+    width: calc(100% / 12 * 11);
+}
+
+.col-12 {
+    padding: 0 12px;
+    width: calc(100% / 12 * 12);
+}
+/* 距離 */
+.me-48 {
+    margin: 48px auto;
+}
+
+.me-64 {
+    margin: 64px auto;
+}
+
+.me-b16 {
+    margin-bottom: 16px
+}
+
+.me-b48 {
+    margin-bottom: 48px
+}
+
+.me-b12 {
+    margin-bottom: 12px
+}
+
+.me-b24 {
+    margin-bottom: 24px
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap !important;
+}
+
+//定位 
+.position-relative {
+    position: relative;
+}
+
+@media screen and (max-width:768px) {
+    .m-none {
+        display: none;
+    }
+
+    .d-none {
+        display: block;
+    }
+
+    .overflow-lg-auto {
+        overflow: auto;
+    }
+
+    /* 通用樣式 */
+    .container {
+        width: 100%;
+    }
+
+    .hot-col-3 {
+        padding: 0 8px;
+        width: calc(100% / 12 *12);
+    }
+
+    .chooset-col-3 {
+        width: calc(100% / 12 *6);
+        padding: 0 8px;
+    }
+
+    .col-6 {
+        width: 50%;
+        padding: 0 6px;
+    }
+
+}

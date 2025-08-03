@@ -1,4 +1,108 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+ 
+footer {
+    background-color: #F8F9FA;
+    padding: 64px 0;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+/* 加入會員---------------------------*/
+.Join-us {
+    background-color: #E8FEC5;
+    font-size: 24px;
+    color: #212529;
+    padding:24px 0 12px 0;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    margin: 64px auto;
+}
+
+.Join-us span {
+    border-radius: 4px;
+    background-color: #212529;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 24px;
+    margin: 0 0 0 24px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.Copyright {
+    margin: 32px auto 0 auto;
+    color: #6C757D;
+    padding-bottom: 64px;
+}
+
+.Copyright p {
+    margin-bottom: 4px;
+}
+
+/* footer nav 樣式 */
+.fd-menu {
+    padding: 4px 4px 32px 4px;
+    border-bottom: 1px solid #DEE2E6;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 64px;
+    cursor: pointer;
+}
+
+.fd-menu .logo {
+    background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/8719e07a34f05b853e98e1402ed748446fdd8ef3/2025-week1/logo.svg) no-repeat center center;
+    width: 129px;
+    height: 46px;
+}
+
+.fd-menu p {
+    margin: 0;
+}
+
+.fd-menu span {
+    margin: 0 8px;
+    font-weight: 700;
+} 
+@media screen and (max-width:768px) {
+/* 加入會員 */
+    .Join-us {
+        font-size: 20px;
+        margin: 0 auto;
+        padding: 24px;
+    }
+
+    .Join-us span {
+        margin: 0 0 0 16px;
+
+    }
+
+    /* footer */
+    footer {
+        padding: 32px 12px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .fd-Menu .logo {
+        padding: 8px 0;
+    }
+
+    .fd-Menu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 4px 4px 24px 4px;
+    }
+
+    .fd-menu span {
+        display: block;
+        padding: 12px 0;
+        text-align: left;
+        margin: 8px 12px;
+    }
+
+
+
+
 }
