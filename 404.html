@@ -1,31 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> WEEK4</title>
-    <script type="module" crossorigin src="/vite/assets/main-CxleLFpt.js"></script>
-    <link rel="stylesheet" crossorigin href="/vite/assets/main-B5Cu3ACO.css">
-  </head>
-  <body>
-     
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> WEEK4 產品頁</title>
+  <link rel="stylesheet" href="../assets/scss/index.scss">
+  <script type="module" crossorigin src="/vite/assets/main-euABCKH9.js"></script>
+  <link rel="stylesheet" crossorigin href="/vite/assets/main-BTrbTQgQ.css">
+</head>
+
+<body>
+ 
+    
 <header class="hd-content">
-    <nav>
-        <div class="menu-bar">
-            <span class="logo"></span>
-            <span class="m-none"><a href="brand-list.html">商品列表</a></span>
-            <span class="m-none"><a href="brand.html">品牌故事</a></span>
-        </div>
-        <div class="menu-bar">
-            <span class="user"></span>
+    <nav class="menu-bar">
+        <ul class="menu-bar list-none">
+            <li class="logo"><a href="index.html"></a></li>
+            <li class="m-none"><a href="product-list.html">商品列表</a></li>
+            <li class="m-none"><a href="#">品牌故事</a></li>
+        </ul> 
+        <ul class="menu-bar list-none">
+            <li class="user"><a href="login.html"> </a></li>
+        </ul> 
         </div>
     </nav>
-</header>
-    <h1 class="index-title">我是首頁</h1>
-    <img src="/vite/assets/dog-C9XCfHyE.jpg" style="width: 300px;" alt="cat">
+</header>      <!-- top banner --> 
+      <div class="top-banner">
+        <h1 class="">URBNSTEP</h1>
+        <h3 class="">Your Step, Your Statement</h3>
+        <button type="button"><a href="#">立即選購</a></button>
+      </div>
+      <!-- 新品上市 -->
+      <main>
+      <section class="new-Products">
+        <h2 class="tiele">New Arrival</h2>
+        <h3 class="subtitle">新品上市</h3>
+        <!-- 產品格線系統 -->
+        <div class="container">
+          <div class="row">
+            <div class="col-6 me-b24">
+              <a href="product-list.html">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/new-1.png?raw=true"
+                  alt="image-1">
+                <h4 class="title">Monoverse</h4>
+                <p class="price">NT$3,600</p>
+              </a>
+            </div>
+            <div class="col-6 me-b24">
+              <a href="product-list.html">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/new-2.png?raw=true"
+                  alt="image-1">
+                <h4 class="title">PLATFORM 404</h4>
+                <p class="price">NT$2,600</p>
+              </a>
+            </div>
+            <div class="col-6 me-b24">
+              <a href="product-list.html">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/new-3.png?raw=true"
+                  alt="image-1">
+                <h4 class="title">URBN Force</h4>
+                <p class="price">NT$3,200</p>
+              </a>
+            </div>
+            <div class="col-6 me-b24">
+              <a href="product-list.html">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/new-4.png?raw=true"
+                  alt="image-1">
+                <h4 class="title">Mode90</h4>
+                <p class="price">NT$4,000</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 熱銷補貨 -->
+      <section class="hot-Products">
+        <div class="container">
+          <h3 class="subtitle me-b16">熱銷補貨</h3>
+          <div class="row flex-nowrap overflow-lg-auto">
+            <div class="hot-col-3 ">
+              <a href="">
+                <span>人氣 No.1</span>
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-1.png?raw=true"
+                  alt="image-1">
+              </a>
+            </div>
+            <div class="hot-col-3 ">
+              <a href="">
+                <span>人氣 No.1</span>
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-2.png?raw=true"
+                  alt="image-1">
+              </a>
+            </div>
+            <div class="hot-col-3 ">
+              <a href="">
+                <span>人氣 No.1</span>
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-3.png?raw=true"
+                  alt="image-1">
+              </a>
+            </div>
+            <div class="hot-col-3 ">
+              <a href="">
+                <span>人氣 No.1</span>
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-4.png?raw=true"
+                  alt="image-1">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- cta-banner -->
+      <section class="cta-banner">
+        <h2 class="title">
+          <span>URBNSTEP</span>
+          <span class="color_g">x</span>
+          <span>Kevin Chen</span>
+        </h2>
+        <h3 class="title">跨界聯名，限量發售</h3>
+        <h4 class="title"><span>新銳漫畫家 Kevin Chen 親自操刀設計</span><span class="m-none">，</span><span>街頭能量全面引爆！</span></h4>
+        <button type="button"><a href="#">立即選購</a></button>
+        <span class="star"><img src="data:image/svg+xml,%3csvg%20width='66'%20height='66'%20viewBox='0%200%2066%2066'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_f_12008_13886)'%3e%3cpath%20d='M26.7724%2013.532L25.3662%2027.4297C25.3511%2027.5787%2025.2296%2027.6983%2025.0729%2027.7183L13.7243%2029.1696C13.4035%2029.2106%2013.3186%2029.6123%2013.5981%2029.7669L23.5412%2035.2677C23.6928%2035.3515%2023.7521%2035.5308%2023.6782%2035.6815L17.6019%2048.066C17.4639%2048.3473%2017.784%2048.6324%2018.0723%2048.4855L29.7974%2042.4996C29.9665%2042.4133%2030.1776%2042.4765%2030.2635%2042.6391L35.565%2052.6727C35.7153%2052.9572%2036.1639%2052.8854%2036.2071%2052.57L37.9056%2040.1498C37.924%2040.0153%2038.0294%2039.9061%2038.1694%2039.8767L52.4479%2036.874C52.7447%2036.8116%2052.8128%2036.4403%2052.5558%2036.287L41.0465%2029.424C40.9182%2029.3475%2040.8589%2029.1999%2040.901%2029.062L44.6436%2016.8139C44.7332%2016.5208%2044.3818%2016.285%2044.119%2016.462L33.9835%2023.2923C33.8208%2023.4019%2033.5938%2023.3561%2033.4926%2023.1932L27.4047%2013.3994C27.2373%2013.1302%2026.8038%2013.2212%2026.7724%2013.532Z'%20stroke='%23D4FF00'%20stroke-width='3'/%3e%3c/g%3e%3cg%20filter='url(%23filter1_f_12008_13886)'%3e%3cpath%20d='M26.7724%2013.532L25.3662%2027.4297C25.3511%2027.5787%2025.2296%2027.6983%2025.0729%2027.7183L13.7243%2029.1696C13.4035%2029.2106%2013.3186%2029.6123%2013.5981%2029.7669L23.5412%2035.2677C23.6928%2035.3515%2023.7521%2035.5308%2023.6782%2035.6815L17.6019%2048.066C17.4639%2048.3473%2017.784%2048.6324%2018.0723%2048.4855L29.7974%2042.4996C29.9665%2042.4133%2030.1776%2042.4765%2030.2635%2042.6391L35.565%2052.6727C35.7153%2052.9572%2036.1639%2052.8854%2036.2071%2052.57L37.9056%2040.1498C37.924%2040.0153%2038.0294%2039.9061%2038.1694%2039.8767L52.4479%2036.874C52.7447%2036.8116%2052.8128%2036.4403%2052.5558%2036.287L41.0465%2029.424C40.9182%2029.3475%2040.8589%2029.1999%2040.901%2029.062L44.6436%2016.8139C44.7332%2016.5208%2044.3818%2016.285%2044.119%2016.462L33.9835%2023.2923C33.8208%2023.4019%2033.5938%2023.3561%2033.4926%2023.1932L27.4047%2013.3994C27.2373%2013.1302%2026.8038%2013.2212%2026.7724%2013.532Z'%20stroke='%23D4FF00'%20stroke-width='3'/%3e%3c/g%3e%3cpath%20d='M26.7724%2013.532L25.3662%2027.4297C25.3511%2027.5787%2025.2296%2027.6983%2025.0729%2027.7183L13.7243%2029.1696C13.4035%2029.2106%2013.3186%2029.6123%2013.5981%2029.7669L23.5412%2035.2677C23.6928%2035.3515%2023.7521%2035.5308%2023.6782%2035.6815L17.6019%2048.066C17.4639%2048.3473%2017.784%2048.6324%2018.0723%2048.4855L29.7974%2042.4996C29.9665%2042.4133%2030.1776%2042.4765%2030.2635%2042.6391L35.565%2052.6727C35.7153%2052.9572%2036.1639%2052.8854%2036.2071%2052.57L37.9056%2040.1498C37.924%2040.0153%2038.0294%2039.9061%2038.1694%2039.8767L52.4479%2036.874C52.7447%2036.8116%2052.8128%2036.4403%2052.5558%2036.287L41.0465%2029.424C40.9182%2029.3475%2040.8589%2029.1999%2040.901%2029.062L44.6436%2016.8139C44.7332%2016.5208%2044.3818%2016.285%2044.119%2016.462L33.9835%2023.2923C33.8208%2023.4019%2033.5938%2023.3561%2033.4926%2023.1932L27.4047%2013.3994C27.2373%2013.1302%2026.8038%2013.2212%2026.7724%2013.532Z'%20stroke='%23D4FF00'%20stroke-width='2'/%3e%3cdefs%3e%3cfilter%20id='filter0_f_12008_13886'%20x='0.918457'%20y='0.741211'%20width='64.3027'%20height='64.6084'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='BackgroundImageFix'%20result='shape'/%3e%3cfeGaussianBlur%20stdDeviation='5.5'%20result='effect1_foregroundBlur_12008_13886'/%3e%3c/filter%3e%3cfilter%20id='filter1_f_12008_13886'%20x='0.918457'%20y='0.741211'%20width='64.3027'%20height='64.6084'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='BackgroundImageFix'%20result='shape'/%3e%3cfeGaussianBlur%20stdDeviation='5.5'%20result='effect1_foregroundBlur_12008_13886'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e" alt=""></span>
+        <span class="sparkle"><img src="data:image/svg+xml,%3csvg%20width='107'%20height='101'%20viewBox='0%200%20107%20101'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M56.5204%2021.4447C66.4308%2025.0469%2076.181%2028.9198%2085.9276%2032.9321'%20stroke='%23D2FF01'%20stroke-width='2.93433'%20stroke-miterlimit='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M41.3403%2039.2673C50.5561%2046.8512%2058.3486%2055.8527%2066.7269%2064.2858'%20stroke='%23D2FF01'%20stroke-width='2.93433'%20stroke-miterlimit='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M21.438%2050.6704C25.2109%2059.9189%2028.0815%2069.8349%2028.5455%2079.8152'%20stroke='%23D2FF01'%20stroke-width='2.93433'%20stroke-miterlimit='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cg%20filter='url(%23filter0_f_12008_13892)'%3e%3cpath%20d='M56.5204%2021.4447C66.4308%2025.0469%2076.181%2028.9198%2085.9276%2032.9321'%20stroke='%23D2FF01'%20stroke-width='2.93433'%20stroke-miterlimit='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M41.3403%2039.2683C50.5561%2046.8522%2058.3486%2055.8537%2066.7269%2064.2868'%20stroke='%23D2FF01'%20stroke-width='2.93433'%20stroke-miterlimit='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M21.438%2050.6704C25.2109%2059.9189%2028.0815%2069.8349%2028.5455%2079.8152'%20stroke='%23D2FF01'%20stroke-width='2.93433'%20stroke-miterlimit='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_f_12008_13892'%20x='0.969971'%20y='0.977539'%20width='105.426'%20height='99.3047'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='BackgroundImageFix'%20result='shape'/%3e%3cfeGaussianBlur%20stdDeviation='9.5'%20result='effect1_foregroundBlur_12008_13892'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e" alt=""></span>
+      </section>
+      <!--依系列選購-->
+      <section class="chooset-Products">
+        <div class="container">
+          <h3 class="title me-b16">依系列選購</h3>
+          <div class="row ">
+            <div class="chooset-col-3  me-b24">
+              <a href="product-list.html">
+                <img class="darken-40" src="/vite/assets/shoe_7-B3nMQHH9-B3nMQHH9.png" alt="image-1">
+                <div class="middle">
+                  <p>URBN RUNNER</p>
+                  <p>慢跑系列</p>
+                </div>
+              </a>
+            </div>
+            <div class="chooset-col-3  me-b24">
+              <a href="product-list.html">
+                <img class="darken-40" src="/vite/assets/shoe_1-BUOGwROt-BUOGwROt.png" alt="image-1">
+                <div class="middle">
+                  <p>STREETMODE</p>
+                  <p>滑板系列</p>
+                </div>
+              </a>
+            </div>
+            <div class="chooset-col-3  me-b24">
+              <a href="product-list.html">
+                <img class="darken-40" src="/vite/assets/shoe_5-BXlZfv2l-BXlZfv2l.png" alt="image-1">
+                <div class="middle">
+                  <p>CHUNK DISTRICT</p>
+                  <p>厚底系列</p>
+                </div>
+              </a>
+            </div>
+            <div class="chooset-col-3  me-b24">
+              <a href="product-list.html">
+                <img class="darken-40" src="/vite/assets/shoe_7-B3nMQHH9-B3nMQHH9.png" alt="image-1">
+                <div class="middle">
+                  <p>COLLAB ZONE</p>
+                  <p>聯名企劃</p>
+                </div>
+              </a>
+            </div>
 
-    <footer class="footer">footer</footer>
-  </body>
+
+          </div>
+        </div>
+      </section>
+      <!--穿搭靈感 -->
+      <section class="idea-Products">
+        <div class="container">
+           <h3 class="title me-b16">穿搭靈感</h3>
+          <div class="gallery-grid">
+            <img src="/vite/assets/gallery_img_1-DiX1JgpM.png" alt="gallery-01">
+            <img src="/vite/assets/gallery_img_2-C5lTlK48.png" alt="gallery-02">
+            <img src="/vite/assets/gallery_img_3-PCXkdKyc.png" alt="gallery-03">
+            <img src="/vite/assets/gallery_img_4-D6UZ9zf6.png" alt="gallery-06">
+            <img class="larger" src="/vite/assets/gallery_img_11-B4Ze-J6k.png" alt="gallery-04">
+            <img class="larger" src="/vite/assets/gallery_img_12-DrtRDNYM.png" alt="gallery-05">
+            <img src="/vite/assets/gallery_img_5-xaDJgAhB.png" alt="gallery-07">
+            <img src="/vite/assets/gallery_img_8-BjPgZncG.png" alt="gallery-08">
+            <img src="/vite/assets/gallery_img_7-wUlDMRZA.png" alt="gallery-09">
+            <img src="/vite/assets/gallery_img_10-DzFVUbVW.png" alt="gallery-10">
+            <img src="/vite/assets/gallery_img_9-L62XB2PX.png" alt="gallery-5">
+            <img src="/vite/assets/gallery_img_12-DrtRDNYM.png" alt="gallery-12">
+
+          </div>
+
+      </section>
+    </main>
+  
+  <footer>
+     <div class="Join-us d-flex">
+        加入會員取得 9 折優惠 <span>馬上註冊</span>
+    </div>
+    <!-- nav -->
+    <nav class="fd-menu d-flex d-none container">
+            <p class="logo"><a href="index.html"></a></p>
+            <p>
+                <span><a href="product-list.html">商品列表</a></span>
+                <span><a href="#">品牌故事</a></span>
+            </p>
+        </nav>
+        <div class="Copyright f-14">
+            <P>Copyright ©2025 URBNSTYLE</P>
+            <P>All Rights Reserved.</P>
+        </div>
+</footer>    
+</body>
+
 </html>
