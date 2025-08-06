@@ -1,0 +1,305 @@
+div {border: #000 1px solid;}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 24px;
+    margin: 0 auto;
+}
+
+.h2-title {
+    font-size: 28px;
+    font-weight: 700;
+    display: block;
+}
+
+.h3-title {
+    font-size: 24px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 16px;
+}
+
+h4.title {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 12px 0
+}
+
+
+
+nav.Product-menu li {
+    padding: 16px 0;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+
+.data-item {
+    display: flex;
+    text-align: left;
+    margin: 48px auto;
+}
+
+.card-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.data-item img {
+    max-width: 100%;
+    margin-bottom: 12px;
+    height: auto;
+}
+
+.card-item li {
+    margin-bottom: 48px;
+}
+
+.Brand-intro img {
+    margin: 0 -110px 0 -110px;
+}
+
+.Brand-intro h2.title {
+    font-size: 24px;
+    margin: 24px 0;
+}
+
+.Brand-intro ul.m-left {
+    margin-left: 24px;
+}
+
+.Brand-intro ul {
+    margin: 6px 0;
+}
+
+.Brand-intro ul li {
+    margin-bottom: 12px;
+}
+
+/* brand-data 產品資料說明 */
+.data-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+h5 {
+    margin-bottom: 8px;
+    color: #212529;
+}
+
+.text-conent {
+    margin-bottom: 16px;
+}
+
+.text-conent p {
+    margin-bottom: 16px;
+}
+
+.color-conent {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.color-conent .color-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8px;
+    align-items: center;
+}
+
+.color-conent img {
+    width: 64px;
+    margin-bottom: 4px;
+}
+
+.size-conent {
+    display: flex;
+    flex-direction: column;
+}
+
+.size-conent ul {
+    margin: 8px -4px;
+}
+
+.size-conent ul li {
+    width: 160px;
+    margin: 0 4px 8px 4px;
+    border: thin solid #DEE2E6;
+    border-radius: 4px;
+    padding: 12px 0;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.size-conent ul li:hover {
+    border: thin solid #212529;
+}
+
+.size-conent ul li.Disabled {
+    border: thin solid #DEE2E6;
+    color: #DEE2E6;
+}
+
+.btn-conent {
+    width: 100%;
+    margin: 48px auto 32px auto;
+    display: flex;
+    gap: 8px;
+
+}
+
+button {
+    width: 50%;
+    padding: 12px 0;
+    border: thin solid #212529;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #212529;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+}
+
+button.active {
+    background-color: #212529;
+    color: #fff;
+}
+
+button i.bi-heart {
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+button i.bi-handbag-fill {
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+button:nth-of-type(3) {
+    display: none;
+}
+
+
+
+
+@media screen and (max-width:1025px) and (min-width:320px) {
+    main {
+        padding: 0 12px;
+        width: 100%;
+    }
+
+    .h2-title {
+        margin: 12px 0;
+    }
+
+    .card-container {
+        margin: 0 auto;
+    }
+
+    .card-item li {
+        margin-bottom: 24px;
+    }
+
+    .card-item img {
+        margin-bottom: 8px;
+
+    }
+
+    .data-item img {
+        margin-bottom: 8px;
+        padding: 0 16px 0 0px;
+        max-width: 300px;
+    }
+
+    .data-container {
+        padding: 0;
+        width: 100%;
+        margin: 13px auto 24px auto;
+    }
+
+    .data-item {
+        display: flex;
+
+        margin: 16px 0;
+        overflow-x: auto;
+        width: 100%;
+    }
+
+    button {
+        width: 85%;
+    }
+
+
+    button:nth-of-type(1) {
+        display: none;
+    }
+
+    button:nth-of-type(3) {
+        display: block;
+        border: none;
+        width: auto;
+    }
+
+
+    button:nth-of-type(3) i {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        padding: 12px 0;
+        margin: 0 0 0 8px;
+    }
+
+    /*brand-list 頁面網格 */
+    .card-col-7 {
+        width: calc(100% / 1);
+        padding: 0;
+    }
+
+    .card-col-2 {
+        display: none;
+    }
+
+    .card-col-10 {
+        width: calc(100% / 1);
+    }
+
+    .card-col-4 {
+        padding: 0 6px;
+        width: calc(100% / 2);
+    }
+
+    /*brand-list 頁面網格 */
+    .data-row {
+        padding: 0 -8px;
+        flex-direction: column;
+    }
+
+    .data-col-6 {
+        width: calc(100% / 1);
+        padding: 0 -12px;
+    }
+
+    .col-3 {
+        width: calc(100% / 1);
+        padding: 0;
+    }
+
+    .data-col-5 {
+        width: calc(100% / 1);
+        padding: 0;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:768px) {}

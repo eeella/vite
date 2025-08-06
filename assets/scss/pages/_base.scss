@@ -36,6 +36,10 @@ h4 {
     font-weight: 500;
 }
 
+.t-decoration {
+    text-decoration: line-through;
+}
+
 /* 顏色 */
 .color_bk {
     color: #212529;
@@ -133,6 +137,53 @@ hr {
     padding: 0 12px;
     width: calc(100% / 12 * 12);
 }
+
+// 產品list
+.card-col-2 {
+    padding: 0 12px;
+    width: calc(100% / 12 * 2);
+}
+
+.card-col-4 {
+    padding: 0 12px;
+    width: calc(100% / 12 * 4);
+}
+
+.card-col-10 {
+    padding: 0 12px;
+    width: calc(100% / 12 * 10);
+}
+
+
+// 產品資料頁
+.data-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -4px;
+}
+
+.data-col-3 {
+    padding: 0 12px;
+    width: calc(100% / 12 * 3);
+}
+
+.data-col-5 {
+    padding: 0 12px;
+    width: calc(100% / 12*5);
+}
+
+.data-col-7 {
+    padding: 0 12px;
+    width: calc(100% / 12*7);
+}
+
+.data-col-6 {
+    padding: 4px 4px;
+    width: calc(100% / 12*6);
+}
+div {border: #000 1px solid;}
+
+
 /* 距離 */
 .me-48 {
     margin: 48px auto;
@@ -167,7 +218,76 @@ hr {
     position: relative;
 }
 
-@media screen and (max-width:768px) {
+// 區隔線
+hr {
+    background-color: #DEE2E6;
+    height: 1px;
+    margin: 32px auto;
+    width: 100%;
+    border: 0;
+}
+
+/* 麵包屑導航 */
+.breadcrumb {
+    color: #212529;
+    font-weight: 500;
+}
+
+.breadcrumb ol li a {
+    color: #6C757D;
+    text-decoration: none;
+
+}
+
+.breadcrumb ol li a::after {
+    content: "/";
+    margin: 0 12px;
+    text-decoration: none;
+}
+
+.breadcrumb ol li:last-child:after {
+    content: "";
+    margin: 0 12px;
+}
+
+/* 頁碼清單 -------------------------*/
+.Pagination-bar {
+    margin: 48px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.Pagination-bar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Pagination-bar ul li {
+    width: 48px;
+    height: 48px;
+    margin: 0 8px;
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.Pagination-bar ul li:hover {
+    background-color: #C0FA73;
+}
+
+.Pagination-bar .Previous,
+.Pagination-bar .Next {
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+@media screen and (max-width:1025px) and (min-width:320px) {
     .m-none {
         display: none;
     }
@@ -199,5 +319,61 @@ hr {
         width: 50%;
         padding: 0 6px;
     }
+
+    // 產品list
+    .card-col-2 {
+        padding: 0 12px;
+        width: calc(100% / 12 * 2);
+    }
+
+    .card-col-4 {
+        padding: 0 6px;
+        width: calc(100% / 12 * 6);
+    }
+
+    .card-col-10 {
+        padding: 0;
+        width: calc(100% / 12 * 12);
+    }
+
+    // 產品細節資料
+    .data-col-3 {
+        padding: 0 12px;
+        width: calc(100% / 12 * 12);
+    }
+
+    .data-col-5 {
+        padding: 0 12px;
+        width: calc(100% / 12*12);
+    }
+
+    .data-col-6 {
+        padding: 4px 4px;
+        width: calc(100% / 12*12);
+    }
+
+    .data-col-7 {
+        width: calc(100% / 1);
+        padding: 0;
+    }
+
+    /*  <!--麵包屑導航 --> */
+    .breadcrumb ol li a::after {
+        margin: 0 8px;
+    }
+
+    /* 頁碼 */
+    .Product-content {
+        padding: 0;
+    }
+
+    .Pagination-bar {
+        margin: 16px 0;
+    }
+
+    .Pagination-bar ul li {
+        width: 40px;
+    }
+
 
 }
